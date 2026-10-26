@@ -6,6 +6,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Identifiants de la base en ligne (InfinityFree) : jamais envoyés sur GitHub
+database/config.php
+
 # Environnement de tests (PHPUnit) : gardé en local, pas envoyé sur GitHub
 vendor/
 composer.json

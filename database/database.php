@@ -1,9 +1,15 @@
 <?php
 // Paramètres de connexion à la base de données
-$host = "localhost";
-$dbname = "henriques_guillaume_jo2028";
-$username = "root";
-$password = "root";
+// En ligne (InfinityFree), ils sont dans database/config.php : ce fichier n'est pas envoyé sur GitHub
+if (file_exists(__DIR__ . "/config.php")) {
+    require __DIR__ . "/config.php";
+} else {
+    // En local (MAMP)
+    $host = "localhost";
+    $dbname = "henriques_guillaume_jo2028";
+    $username = "root";
+    $password = "root";
+}
 
 try {
     // Création d'une nouvelle connexion PDO
