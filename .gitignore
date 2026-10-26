@@ -6,8 +6,12 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Dépendances Composer (PHPUnit) : elles se réinstallent avec "composer install"
+# Environnement de tests (PHPUnit) : gardé en local, pas envoyé sur GitHub
 vendor/
+composer.json
+composer.lock
+phpunit.xml
+tests/
 
 # Journaux et rapports générés automatiquement
 *.log
